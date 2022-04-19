@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Hotel Pacific</title>
+            <link rel="stylesheet" href="CSS\style-sheet.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        <body onload="myFunction()">
+            <p1 class="text1">Hotel Pacific</p1>
+        <ul class="nav1" id="grad1">
+            <li><a href=file:///C:/Users/Admin/Documents/Hotel/Homepage.html>Home</a> </li>
+            <li><a href="file:///C:/Users/Admin/Documents/Hotel/loginform.html">Login</a> </li>
+            <li><a href="file:///C:/Users/Admin/Documents/Hotel/signup.html">Sign up</a> </li>
+            <li><a href="file:///C:/Users/Admin/Documents/Hotel/About.html">About</a> </li>
+        </ul>
+        <div class="content-wrapper">
+            <img class="mySlides" src="img/room2.jpg" height="500px">
+            <img class="mySlides" src="img/room1.jpg" height="500px">
+        <div class="text-wrapper">
+            <h1>HOTEL PACIFIC</h1>
+            <li>There is only one boss, the Guest.</li>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++
+            if (myIndex > x.length) {myIndex = 1}
+            x [myIndex-1].style.display = "block";
+            setTimeout(carousel, 6000);
+        }
+    </script>
+
+    <!--footer-->
+
+    <ul class="nav2">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </ul>
+    <div class="footer">
+        <p3>Copyright 2022. All rights reserved.</p3><br><br>
+        <p4>Powered by Bush Mutali Inc.</p4>
+    </div>
+    <script>
+        function myFunction() {
+            alert("Log in or Sign Up to continue")
+        }
+    </script>
+    </body>
+</html>
